@@ -11,4 +11,9 @@ import scrapy
 class CheckproductsItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-    pass
+    name = scrapy.Field()
+    link = scrapy.Field()
+    price = scrapy.Field()
+    store = scrapy.Field()
+    state = scrapy.Field()
+    #pass
