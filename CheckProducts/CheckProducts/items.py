@@ -8,12 +8,10 @@
 import scrapy
 
 
-class CheckproductsItem(scrapy.Item):
+class NewsItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-    name = scrapy.Field()
+    title = scrapy.Field()
     link = scrapy.Field()
-    price = scrapy.Field()
-    store = scrapy.Field()
-    state = scrapy.Field()
-    #pass
+    body = scrapy.Field()
+    image = scrapy.Field()
