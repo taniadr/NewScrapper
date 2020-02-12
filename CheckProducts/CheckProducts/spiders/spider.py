@@ -51,10 +51,8 @@ class CheckProductsSpider(scrapy.Spider):
 		
 		return image_file
 
-def exportJSON():
-
-	f_json = open("itens.json",'w')
-	with open("itens.json", "w") as myfile:
-		myfile.write(json.dumps(grab(),sort_keys=False))
-		myfile.write(json.dumps("Tentativa2",sort_keys=False))
-	myfile.close()
+	def exportJSON():
+		f_json = open("itens.json",'w')
+		with open("itens.json", "w") as myfile:
+			myfile.write(json.dumps(grab(),sort_keys=False))
+		myfile.close()
